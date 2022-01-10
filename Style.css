@@ -1,0 +1,155 @@
+body {
+  background: #c1a1a4;
+}
+
+.top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-button a {
+  color: #e0cacc;
+  background: #ffffff;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-right: 10px;
+  text-decoration: none;
+  border: 2px solid #e0cacc;
+}
+
+.top-button a:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.common-color {
+  color: #e0cacc;
+}
+
+.nike {
+  color: #403e41;
+}
+
+.hide {
+  display: none;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 5px 5px 5px #ad999b;
+
+  animation-name: card;
+  animation-duration: 3s;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.right-container {
+  padding-top: 55px;
+}
+
+.left-container {
+  margin-right: 30px;
+}
+
+.hero-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 1px #ad999b;
+  transition: all 1.5s;
+  opacity: 0.7;
+}
+
+.hero-image:hover {
+  transform: scale(0.8);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.number-fields {
+  display: flex;
+}
+
+.choose-size {
+  margin-bottom: 0;
+  color: #e0cacc;
+  font-weight: bold;
+}
+
+.number-fields input {
+  width: 42px;
+  height: 42px;
+  margin-right: 5px;
+  text-align: center;
+  border: 1.5px solid #e0cacc;
+  outline: 0;
+}
+
+.number-fields input::placeholder {
+  color: #e0cacc;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons .butt1 {
+  background: #e0cacc;
+  color: #ffffff;
+  padding: 15px 50px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.buttons .butt2 {
+  background: #e0cacc;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.buttons a:hover {
+  background: #dbbfc1;
+  transition: all ease 1s;
+  cursor: pointer;
+}
+
+@keyframes card {
+  0% {
+    margin-top: -350px;
+    opacity: 0.5;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
