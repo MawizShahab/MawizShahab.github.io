@@ -424,6 +424,7 @@ button#closePopup {
 
 @media screen and (max-width: 768px) {
   .nav-menu-block a {
+    font-size: 12px;
     margin-right: 10px;
   }
 
@@ -459,7 +460,21 @@ button#closePopup {
   .total-balance {
     width: 100% !important;
   }
-  .description-container {
+  .description-container,
+  .qr-code img {
     max-width: 100%;
+    width: 100%;
+  }
+
+  span.wallet-address {
+    gap: 5px;
+  }
+  span.wallet-address::before {
+    width: 25px;
+    height: 25px;
+  }
+
+  span.description-content {
+    font-size: 14px;
   }
 }
