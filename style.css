@@ -421,3 +421,45 @@ button#closePopup {
   text-decoration: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-menu-block a {
+    margin-right: 10px;
+  }
+
+  .nav-menu-wrapper {
+    padding: 20px 10px;
+  }
+  .testimonial-section {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .card-wrap-container {
+    flex-direction: column;
+  }
+
+  h1.title {
+    font-size: 50px;
+  }
+
+  .content-container {
+    max-width: 100%;
+    padding: 10px 15px;
+  }
+
+  .image-container img,
+  .card-title {
+    width: 100%;
+  }
+
+  .account-details,
+  .bank-details,
+  .total-balance {
+    width: 100% !important;
+  }
+  .description-container {
+    max-width: 100%;
+  }
+}
