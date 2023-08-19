@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Zenimini";
+  src: url(./custom-fonts/Zenimini-Rough.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "AE Systematic TT BRK";
+  src: url(./custom-fonts/ae-systematic-tt-brk.ae-systematic-tt-brk.ttf)
+    format("truetype");
+}
