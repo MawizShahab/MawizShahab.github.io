@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(./font-outfit/static/Outfit-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Outfit semi bold";
+    src: url(./font-outfit/static/Outfit-SemiBold.ttf) format("truetype");
+  }
+  
