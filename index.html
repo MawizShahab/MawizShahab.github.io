@@ -15,257 +15,531 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
+    <link rel="stylesheet" href="./js/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./js/owl.theme.default.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="custom-font.css" />
-    <title>BOOKONLINE</title>
+    <title>FLEMISH FUSION</title>
+    <script>
+      $(document).ready(function () {
+        $(".burger-menu").click(function () {
+          $(".mobile-nav").toggleClass("show");
+          $(".categories").toggleClass("hide");
+          $(".btn-primary").toggleClass("hide");
+          $(this).toggleClass("hide");
+          $(".cross-menu").toggleClass("show");
+        });
+
+        $(".cross-menu").click(function () {
+          $(".mobile-nav").toggleClass("show");
+          $(".categories").toggleClass("hide");
+          $(".btn-primary").toggleClass("hide");
+          $(this).toggleClass("show");
+          $(".burger-menu").toggleClass("hide");
+        });
+      });
+
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 3,
+          loop: true,
+          nav: false,
+          dots: true,
+          margin: 30,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            992: {
+              items: 3,
+            },
+          },
+        });
+      });
+
+      $(document).ready(function () {
+        $(".works-carousel").owlCarousel({
+          items: 1,
+          dots: true,
+          loop: false,
+          margin: 20,
+        });
+      });
+    </script>
   </head>
   <body>
     <header class="header">
-      <div class="container-fluid">
-        <div class="row align-items-center header-content">
-          <div class="col-lg-4 col-md-6 col-6">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 col-6">
             <div class="logo">
-              <img src="./images/header-logo.svg" alt="Header Logo" />
+              <img src="./images/header-logo.png" alt="Logo" />
             </div>
           </div>
-          <div class="col-lg-8 col-md-6 col-6 text-end">
-            <a href="#" class="btn btn-primary-contact me-3">Contactez nous</a>
-            <img
-              src="./images/language.png"
-              alt="Language"
-              class="language-image"
-            />
+          <div class="col-md-6 d-md-block d-none text-center">
+            <nav class="categories">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Benefits</a></li>
+                <li class="list-inline-item"><a href="#">Process</a></li>
+                <li class="list-inline-item"><a href="#">Works</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-3 col-6 text-right d-md-block d-none">
+            <a href="#" class="btn btn-primary">Let's Talk</a>
+          </div>
+          <div class="col-6 d-md-none text-right toggle-icon-container">
+            <div class="mobile-toggle">
+              <span class="burger-menu">&#9776;</span>
+              <span class="cross-menu hide">&#10006;</span>
+            </div>
+          </div>
+          <div class="col-12 d-md-none">
+            <nav class="mobile-nav">
+              <ul class="list-unstyled">
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#" class="btn btn-primary">Let's Talk</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </header>
-    <section class="info-section">
-      <div class="container-fluid">
-        <div class="row align-items-center opposite-design">
-          <div class="col-lg-6 col-md-12">
-            <div class="content first-content">
-              <h2>La réservation Rapide et efficace de votre restaurant</h2>
-              <p>
-                La satisfaction, tant pour vous que pour votre équipe et vos
-                clients, panouit lorsque les réservations en ligne ou par
-                téléphone se transforment en un véritable plaisir. Explorez
-                notre solution de réservation pour restaurants, exempte
-                intermédiaires et de commissions, pour une expérience unique.
-              </p>
-              <a href="#" class="btn btn-common">Demander une demo</a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <img
-              src="./images/section1.png"
-              alt="Section Image"
-              class="img-fluid hero-desktop"
-            />
-            <img
-              src="./images/hero-mobile.png"
-              alt="Section Image"
-              class="img-fluid hero-mobile"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="info-section">
-      <div class="container-fluid">
+    <section class="content-section">
+      <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12">
-            <img
-              src="./images/section2.png"
-              alt="Section Image 2"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-lg-6 col-md-12">
+          <div class="col-md-6 order-md-1 order-2">
             <div class="content">
-              <h2>Digitalisez votre réservation et Gagner du temps !</h2>
-              <p>
-                L’outil BOOKONLINE devient votre partenaire pour la gestion de
-                vos réservations en temps réel et en ligne. Il vous permet de
-                maîtriser votre taux d’occupation ainsi que la disposition de
-                votre espace. Profitez de réservations 24h/24, même pendant les
-                périodes de fermeture de votre restaurant, grâce à notre module
-                de réservation accessible à vos clients.
-              </p>
-              <a href="#" class="btn btn-common">Demander une demo</a>
+              <h2>Make Stunning Website To Generate More Revenue</h2>
+              <p>Stunning websites delivered swiftly and priced perfectly.</p>
+              <div class="button-links">
+                <a href="#" class="btn btn-primary">Contact Us</a>
+                <a href="#" class="btn btn-secondary">Read Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-2 order-1">
+            <div class="image">
+              <!-- Your image here -->
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="info-section">
-      <div class="container-fluid">
-        <div class="row align-items-center opposite-design">
-          <div class="col-lg-6 col-md-12">
-            <div class="content">
-              <h2>Minimisez les imprévues ! C’est génial ! Non ?</h2>
-              <p>
-                Mettez en place des rappels automatiques par e-mail pour
-                demander à vos clients de confirmer leur réservation le jour
-                prévu au restaurant.
+    <section class="perks-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h3 class="mini-title">— BENEFITS —</h3>
+            <h2 class="main-title">Perks That You’ll Love</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="testimonial">
+              <img
+                src="./images/testimonial1.png"
+                alt="Testimonial 1"
+                class="testimonial-image"
+              />
+              <h4 class="testimonial-title">Lighting Fast Delivery</h4>
+              <p class="testimonial-subtitle">
+                A cohesive team delivering rapid results for your project
               </p>
-              <a href="#" class="btn btn-common">Demander une demo</a>
+            </div>
+            <div class="testimonial">
+              <img
+                src="./images/testimonial2.png"
+                alt="Testimonial 1"
+                class="testimonial-image"
+              />
+              <h4 class="testimonial-title">Top-Notch Quality</h4>
+              <p class="testimonial-subtitle">
+                Crazy good websites that are easy to navigate and engage your
+                audience
+              </p>
+            </div>
+            <div class="testimonial">
+              <img
+                src="./images/testimonial3.png"
+                alt="Testimonial 1"
+                class="testimonial-image"
+              />
+              <h4 class="testimonial-title">Budget-Friendly</h4>
+              <p class="testimonial-subtitle">
+                Flexible pricing plans to accommodate all project needs
+              </p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12">
-            <img
-              src="./images/section3.png"
-              alt="Section Image"
-              class="img-fluid"
-            />
+          <div class="col-md-6">
+            <div class="testimonial">
+              <img
+                src="./images/testimonial4.png"
+                alt="Testimonial 1"
+                class="testimonial-image"
+              />
+              <h4 class="testimonial-title">Unique And All Yours</h4>
+              <p class="testimonial-subtitle">
+                Each of your designs is made especially for you and is 100%
+                yours.
+              </p>
+            </div>
+            <div class="testimonial">
+              <img
+                src="./images/testimonial5.png"
+                alt="Testimonial 1"
+                class="testimonial-image"
+              />
+              <h4 class="testimonial-title">Unlimited Revisions</h4>
+              <p class="testimonial-subtitle">
+                Request as many revisions until you're happy with every aspect
+                of your website.
+              </p>
+            </div>
+            <div class="testimonial">
+              <img
+                src="./images/testimonial6.png"
+                alt="Testimonial 1"
+                class="testimonial-image"
+              />
+              <h4 class="testimonial-title">Training & Support</h4>
+              <p class="testimonial-subtitle">
+                Learn website upkeep with our expert training and trust our
+                timely support when needed
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="testimonial-section">
+      <div class="container text-center">
+        <div class="mini-title">— TESTIMONIALS —</div>
+        <div class="main-title">What Our Clients Say</div>
 
-    <section class="info-section">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12">
-            <img
-              src="./images/section4.png"
-              alt="Section Image 2"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="content">
-              <h2>SOYEZ PROCHES DE VOS CLIENTS !</h2>
-              <p>
-                Consultez instantanément l’historique des réservations de votre
-                établissement, les avis les plus récents, les absences non
-                annoncées, ainsi que les préférences alimentaires et habitudes
-                de vos clients (commandes précédentes). Cette base de données
-                client peut être une ressource précieuse pour la création d’un
-                programme de fidélité.
-              </p>
-              <a href="#" class="btn btn-common">Demander une demo</a>
+        <div class="carousel owl-carousel">
+          <!-- Review items will be added dynamically here -->
+          <div class="review-item">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="comment">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-name">John Doe</div>
+              <div class="reviewer-designation">CEO, Company Name</div>
+            </div>
+            <div class="review-logo">
+              <img src="review-logo1.png" alt="Review Logo" />
             </div>
           </div>
+          <!-- Add more review items as needed -->
         </div>
       </div>
     </section>
-
-    <section class="info-section">
-      <div class="container-fluid">
-        <div class="row align-items-center opposite-design">
-          <div class="col-lg-6 col-md-12">
-            <div class="content">
-              <h2>
-                Lacaisse.ma s’associe désormais à Bookonline pour faciliter
-                votre quotidien !
-              </h2>
-              <p>
-                Grace à l’intégration entre BOOKONLINE et LACAISSE.MA leader de
-                caisses enregistreuses au Maroc, vous pouvez améliorer la
-                gestion de vos réservations en restaurant en accédant aisément à
-                l’historique des commandes, aux préférences, aux tickets de
-                caisse et aux factures de vos clients.
-              </p>
-              <a href="#" class="btn btn-common">Demander une demo</a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <img
-              src="./images/section5.png"
-              alt="Section Image"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="references-section">
-      <div class="container-fluid">
+    <section class="process-section">
+      <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>Nos références</h2>
+            <h3 class="mini-title">— PROCESS —</h3>
+            <h2 class="main-title">It's Never Been This Easy</h2>
           </div>
         </div>
-        <div class="row brands-container">
-          <div class="col-2 col-md-1 brand-img">
-            <img
-              src="./images/cloud.png"
-              alt="Logo 1"
-              class="img-fluid brand-logo"
-            />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="process-testimonial">
+              <img
+                src="./images/process1.png"
+                alt="Process Image 1"
+                class="process-testimonial-image"
+              />
+              <h4 class="testimonial-title">Discovery Meeting</h4>
+              <p class="testimonial-content text-right">
+                Authors should gather all the necessary materials, including
+                their polished manuscript, a well-crafted query or cover letter
+                introducing themselves and their work, and any required
+                documents like a synopsis or author biography.
+              </p>
+            </div>
+            <div class="process-testimonial">
+              <img
+                src="./images/process2.png"
+                alt="Process Image 3"
+                class="process-testimonial-image"
+              />
+              <h4 class="testimonial-title">Unlimited Revisions</h4>
+              <p class="testimonial-content text-right">
+                Your satisfaction is our ultimate priority! We'll go above and
+                beyond, tirelessly refining the design with unlimited revisions
+                until it's absolutely perfect for you. design with unlimited
+                revisions until it's absolutely perfect for you.
+              </p>
+            </div>
           </div>
-          <div class="col-2 col-md-1 brand-img">
-            <img
-              src="./images/lwa.png"
-              alt="Logo 2"
-              class="img-fluid brand-logo"
-            />
+          <div class="col-md-6">
+            <div class="process-testimonial">
+              <img
+                src="./images/process3.png"
+                alt="Process Image 2"
+                class="process-testimonial-image"
+              />
+              <h4 class="testimonial-title">Web Design</h4>
+              <p class="testimonial-content">
+                Our team of talented designers will create a stunning mockup of
+                your website using Figma, a collaborative design platform. We'll
+                bring your vision to life, capturing your unique style and
+                brand. We'll bring your vision to life.
+              </p>
+            </div>
+            <div class="process-testimonial">
+              <img
+                src="./images/process4.png"
+                alt="Process Image 4"
+                class="process-testimonial-image"
+              />
+              <h4 class="testimonial-title">Web Development</h4>
+              <p class="testimonial-content">
+                Once the design is finalized, we'll add captivating animations
+                and interactive elements to make your website truly dynamic.
+                We'll harness the power of Webflow or Framer, cutting-edge
+                no-code builders.
+              </p>
+            </div>
           </div>
-          <div class="col-2 col-md-1 brand-img">
-            <img
-              src="./images/kong.png"
-              alt="Logo 3"
-              class="img-fluid brand-logo"
-            />
-          </div>
-          <div class="col-2 col-md-1 brand-img">
-            <img
-              src="./images/le-beref.png"
-              alt="Logo 4"
-              class="img-fluid brand-logo"
-            />
-          </div>
-          <div class="col-2 col-md-1 brand-img">
-            <img
-              src="./images/coco.png"
-              alt="Logo 5"
-              class="img-fluid brand-logo"
-            />
-          </div>
-          <div class="col-2 col-md-1 brand-img">
-            <img
-              src="./images/Le-resto.png"
-              alt="Logo 6"
-              class="img-fluid brand-logo"
-            />
-          </div>
-          <div class="col-2 col-md-1 brand-img">
-            <img
-              src="./images/cornich.png"
-              alt="Logo 7"
-              class="img-fluid brand-logo"
-            />
-          </div>
-          <!-- Add more logo columns as needed -->
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="container-fluid footer-bg">
+    <section class="works-section">
+      <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <a href="#" class="btn btn-contact-footer">Contactez nous</a>
+            <h3 class="mini-title">— WORKS —</h3>
+            <h2 class="main-title">Stunning Websites & Nothing Else</h2>
           </div>
         </div>
-        <div class="row align-items-center contact-info">
-          <div class="col-md-6 col-6 text-center">
-            <a href="mailto:contact.applite@gmail.com" class="contact-link">
-              <i class="fas fa-envelope"></i> contact.applite@gmail.com
-            </a>
+        <div class="row">
+          <div class="col-12">
+            <div class="works-carousel owl-carousel">
+              <div class="item">
+                <img
+                  src="./images/work-image.png"
+                  alt="Work Image 1"
+                  class="work-image"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="./images/work-image.png"
+                  alt="Work Image 2"
+                  class="work-image"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="./images/work-image.png"
+                  alt="Work Image 3"
+                  class="work-image"
+                />
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-6 text-center">
-            <a href="tel:0682672317" class="contact-link">
-              <i class="fas fa-phone fa-flip-horizontal"></i> 06 82 67 23 17
-            </a>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-details">
+              <div class="contact-info">
+                <div class="contact-icon">
+                  <img src="./images/location.png" alt="Location Icon" />
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Your Address Here</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="contact-icon">
+                  <img src="./images/phone.png" alt="Phone Icon" />
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+123 456 7890</p>
+                </div>
+              </div>
+              <div class="contact-email">
+                <p>Other Queries? info@Flemishfusion.net</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-form">
+              <h3 class="form-heading text-center">Get in Touch</h3>
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        placeholder="Enter your first name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="Enter your last name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="phoneNumber">Phone Number</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phoneNumber"
+                        placeholder="Enter your phone number"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="newsletter-info">
+              <h3 class="info-title">Stay Updated</h3>
+              <p class="info-detail">
+                Subscribe to our newsletter for the latest updates and offers.
+              </p>
+              <form>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your email"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="newsletter-image">
+              <img
+                src="./images/newsletter.png"
+                alt="Newsletter Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row footer-info">
+          <div class="col-md-4">
+            <div class="footer-logo">
+              <img src="footer-logo.png" alt="Footer Logo" class="img-fluid" />
+              <p class="logo-text">
+                Digital agency headquartered in Reims, France.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-categories text-center">
+              <h4 class="footer-title">Categories</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Let's Talk</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-social text-right">
+              <h4 class="footer-title">Connect with Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-line" />
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-copyright text-center">
+              <p>&copy; 2023 FlemishFusion, Inc. All Rights Reserved.</p>
+            </div>
           </div>
         </div>
       </div>
