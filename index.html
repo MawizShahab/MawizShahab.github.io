@@ -97,7 +97,7 @@
         <div class="row align-items-center">
           <div class="col-md-3 col-6">
             <div class="logo">
-              <img src="./images/header-logo.png" alt="Logo" />
+              <img src="./images/new-header-logo.png" alt="Logo" />
             </div>
           </div>
           <div class="col-md-6 d-md-block d-none text-center">
@@ -464,8 +464,8 @@
                   <img src="./images/location.png" alt="Location Icon" />
                 </div>
                 <div class="contact-text">
-                  <h4>Location</h4>
-                  <p>Your Address Here</p>
+                  <h4>Office</h4>
+                  <p>366 NT Street, London</p>
                 </div>
               </div>
               <div class="contact-info">
@@ -474,11 +474,11 @@
                 </div>
                 <div class="contact-text">
                   <h4>Phone</h4>
-                  <p>+123 456 7890</p>
+                  <p>+123 456 789</p>
                 </div>
               </div>
               <div class="contact-email">
-                <p>Other Queries? info@Flemishfusion.net</p>
+                <span>Other Queries? info@Flemishfusion.net</span>
               </div>
             </div>
           </div>
@@ -490,23 +490,13 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="firstName">First Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="firstName"
-                        placeholder="Enter your first name"
-                      />
+                      <input type="text" class="form-control" id="firstName" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="lastName">Last Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="lastName"
-                        placeholder="Enter your last name"
-                      />
+                      <input type="text" class="form-control" id="lastName" />
                     </div>
                   </div>
                 </div>
@@ -514,23 +504,13 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="email">Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Enter your email"
-                      />
+                      <input type="email" class="form-control" id="email" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="phoneNumber">Phone Number</label>
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="phoneNumber"
-                        placeholder="Enter your phone number"
-                      />
+                      <input type="tel" class="form-control" id="phoneNumber" />
                     </div>
                   </div>
                 </div>
@@ -540,10 +520,9 @@
                     class="form-control"
                     id="message"
                     rows="4"
-                    placeholder="Enter your message"
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">
+                <button type="submit" class="btn btn-submit btn-block">
                   Send Message
                 </button>
               </form>
@@ -553,23 +532,24 @@
       </div>
     </section>
     <section class="newsletter-section">
-      <div class="container">
+      <div class="container newsletter-container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="newsletter-info">
-              <h3 class="info-title">Stay Updated</h3>
+              <h3 class="info-title">Join Our Newsletter</h3>
               <p class="info-detail">
-                Subscribe to our newsletter for the latest updates and offers.
+                Get the best tutorials, design trends and tips for free right to
+                your email!
               </p>
-              <form>
+              <form class="newsletter-form">
                 <div class="input-group">
                   <input
                     type="email"
                     class="form-control"
-                    placeholder="Your email"
+                    placeholder="Your Email"
                   />
                   <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">
+                    <button class="btn btn-sign-up" type="button">
                       Sign Up
                     </button>
                   </div>
@@ -577,7 +557,7 @@
               </form>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="newsletter-image">
               <img
                 src="./images/newsletter.png"
@@ -594,15 +574,18 @@
         <div class="row footer-info">
           <div class="col-md-4">
             <div class="footer-logo">
-              <img src="footer-logo.png" alt="Footer Logo" class="img-fluid" />
+              <img
+                src="./images/new-header-logo.png"
+                alt="Footer Logo"
+                class="img-fluid"
+              />
               <p class="logo-text">
                 Digital agency headquartered in Reims, France.
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 footer-categories-container ">
             <div class="footer-categories text-center">
-              <h4 class="footer-title">Categories</h4>
               <ul class="list-unstyled">
                 <li><a href="#">Benefits</a></li>
                 <li><a href="#">Process</a></li>
@@ -611,12 +594,11 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 footer-social-container">
             <div class="footer-social text-right">
-              <h4 class="footer-title">Connect with Us</h4>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
