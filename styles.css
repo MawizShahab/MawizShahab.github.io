@@ -987,10 +987,11 @@ button.owl-dot.active {
     gap: 32px;
   }
   .contact-email span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     padding: 16px 18px;
     display: block;
+    text-align: center;
   }
 
   section.newsletter-section {
