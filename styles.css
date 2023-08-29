@@ -152,6 +152,10 @@ a.btn.btn-contact {
   border: 0;
 }
 
+a.btn.btn-blog{
+  display: none;
+}
+
 a.btn.btn-blog {
   color: var(--white, #fff);
   font-family: "JetBrains Mono";
