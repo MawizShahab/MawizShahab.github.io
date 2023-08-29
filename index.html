@@ -50,7 +50,7 @@
       });
 
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $(".carousel.owl-carousel").owlCarousel({
           items: 3,
           loop: true,
           nav: false,
@@ -71,11 +71,12 @@
       });
 
       $(document).ready(function () {
-        $(".works-carousel").owlCarousel({
-          items: 1,
+        $(".works-carousel.owl-carousel").owlCarousel({
+          items: 3,
+          loop: true,
+          nav: false,
           dots: true,
-          loop: false,
-          margin: 20,
+          margin: 30,
           responsive: {
             0: {
               items: 1,
@@ -115,7 +116,7 @@
           <div class="col-6 d-md-none text-right toggle-icon-container">
             <div class="mobile-toggle">
               <span class="burger-menu">&#9776;</span>
-              <span class="cross-menu hide">&#10006;</span>
+              <span class="cross-menu hide">X</span>
             </div>
           </div>
           <div class="col-12 d-md-none">
@@ -124,13 +125,16 @@
                 <li><a href="#">Benefits</a></li>
                 <li><a href="#">Process</a></li>
                 <li><a href="#">Works</a></li>
-                <li><a href="#" class="btn btn-primary">Let's Talk</a></li>
+                <div class="contact">
+                  <a href="#" class="btn btn-contact">Let's Talk</a>
+                </div>
               </ul>
             </nav>
           </div>
         </div>
       </div>
     </header>
+    <section class="dots-back-left"></section>
     <section class="content-section">
       <div class="container">
         <div class="row align-items-center">
@@ -149,15 +153,20 @@
           </div>
           <div class="col-md-6 order-md-2 order-1">
             <div class="hero-image-container">
-              <img class="hero-image" src="./images/hero.png" alt="hero-image" />
+              <img
+                class="hero-image"
+                src="./images/hero.png"
+                alt="hero-image"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="background-box-desktop-left"></section>
     <section class="perks-section">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center perks-container">
           <div class="col-md-6 text-center">
             <h3 class="mini-title">— BENEFITS —</h3>
             <h2 class="main-title">Perks That You’ll Love</h2>
@@ -241,6 +250,7 @@
         </div>
       </div>
     </section>
+    <section class="testimonial-before"></section>
     <section class="testimonial-section">
       <div class="container text-center">
         <div class="mini-title">— TESTIMONIALS —</div>
@@ -345,6 +355,7 @@
         </div>
       </div>
     </section>
+    <section class="seperator"></section>
     <section class="process-section">
       <div class="container">
         <div class="row">
@@ -417,6 +428,7 @@
         </div>
       </div>
     </section>
+    <section class="seperator-left"></section>
     <section class="works-section">
       <div class="container">
         <div class="row">
@@ -454,14 +466,24 @@
         </div>
       </div>
     </section>
+    <section class="seperator"></section>
     <section class="contact-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 contact-details-container">
             <div class="contact-details">
               <div class="contact-info">
                 <div class="contact-icon">
-                  <img src="./images/location.png" alt="Location Icon" />
+                  <img
+                    class="location-desktop"
+                    src="./images/location.png"
+                    alt="Location Icon"
+                  />
+                  <img
+                    class="location-mobile"
+                    src="./images/location-mobile.png"
+                    alt="Location Icon"
+                  />
                 </div>
                 <div class="contact-text">
                   <h4>Office</h4>
@@ -470,7 +492,16 @@
               </div>
               <div class="contact-info">
                 <div class="contact-icon">
-                  <img src="./images/phone.png" alt="Phone Icon" />
+                  <img
+                    class="phone-desktop"
+                    src="./images/phone.png"
+                    alt="Phone Icon"
+                  />
+                  <img
+                    class="phone-mobile"
+                    src="./images/phone-mobile.png"
+                    alt="Phone Icon"
+                  />
                 </div>
                 <div class="contact-text">
                   <h4>Phone</h4>
@@ -533,7 +564,7 @@
     </section>
     <section class="newsletter-section">
       <div class="container newsletter-container">
-        <div class="row">
+        <div class="row newsletter">
           <div class="col-md-8">
             <div class="newsletter-info">
               <h3 class="info-title">Join Our Newsletter</h3>
