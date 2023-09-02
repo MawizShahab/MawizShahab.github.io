@@ -22,7 +22,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
-
+    <script type="text/javascript" src="./js/custom.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -32,76 +32,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="custom-font.css" />
     <title>FLEMISH FUSION</title>
-    <script>
-      $(document).ready(function () {
-        $(".burger-menu").click(function () {
-          $(".mobile-nav").toggleClass("show");
-          $(".categories").toggleClass("hide");
-          $(".btn-primary").toggleClass("hide");
-          $(this).toggleClass("hide");
-          $(".cross-menu").toggleClass("show");
-        });
-
-        $(".cross-menu").click(function () {
-          $(".mobile-nav").toggleClass("show");
-          $(".categories").toggleClass("hide");
-          $(".btn-primary").toggleClass("hide");
-          $(this).toggleClass("show");
-          $(".burger-menu").toggleClass("hide");
-        });
-
-        $(".goto").click(function (event) {
-          event.preventDefault();
-          var targetId = $(this).attr("href");
-          $("html, body").animate(
-            { scrollTop: jQuery(targetId).offset().top },
-            1000
-          );
-        });
-      });
-
-      $(document).ready(function () {
-        $(".carousel.owl-carousel").owlCarousel({
-          items: 3,
-          loop: true,
-          nav: false,
-          dots: true,
-          margin: 30,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            768: {
-              items: 2,
-            },
-            992: {
-              items: 3,
-            },
-          },
-        });
-      });
-
-      $(document).ready(function () {
-        $(".works-carousel.owl-carousel").owlCarousel({
-          items: 3,
-          loop: true,
-          nav: false,
-          dots: true,
-          margin: 30,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            768: {
-              items: 1,
-            },
-            992: {
-              items: 1,
-            },
-          },
-        });
-      });
-    </script>
   </head>
   <body>
     <header class="header">
@@ -306,7 +236,7 @@
             <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i clasautoPlaySpeed: 5000,s="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
@@ -646,10 +576,10 @@
           <div class="col-md-5 footer-categories-container">
             <div class="footer-categories text-center">
               <ul class="list-unstyled">
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Let's Talk</a></li>
+                <li><a class="goto" href="#benefits">Benefits</a></li>
+                <li><a class="goto" href="#process">Process</a></li>
+                <li><a class="goto" href="#works">Works</a></li>
+                <li><a class="goto" href="#contact-section">Let's Talk</a></li>
               </ul>
             </div>
           </div>
