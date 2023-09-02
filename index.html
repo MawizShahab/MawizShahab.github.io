@@ -50,7 +50,7 @@
           $(".burger-menu").toggleClass("hide");
         });
 
-        $(".btn-common").click(function (event) {
+        $(".goto").click(function (event) {
           event.preventDefault();
           var targetId = $(this).attr("href");
           $("html, body").animate(
@@ -115,14 +115,22 @@
           <div class="col-md-6 d-md-block d-none text-center">
             <nav class="categories">
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Benefits</a></li>
-                <li class="list-inline-item"><a href="#">Process</a></li>
-                <li class="list-inline-item"><a href="#">Works</a></li>
+                <li class="list-inline-item">
+                  <a class="goto" href="#benefits">Benefits</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="goto" href="#process">Process</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="goto" href="#works">Works</a>
+                </li>
               </ul>
             </nav>
           </div>
           <div class="col-md-3 col-6 text-end d-md-block d-none">
-            <a href="#contact-section" class="btn btn-common">Let's Talk</a>
+            <a href="#contact-section" class="btn btn-common goto"
+              >Let's Talk</a
+            >
           </div>
           <div class="col-6 d-md-none text-right toggle-icon-container">
             <div class="mobile-toggle">
@@ -133,11 +141,11 @@
           <div class="col-12 d-md-none">
             <nav class="mobile-nav">
               <ul class="list-unstyled">
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">Works</a></li>
+                <li><a class="goto" href="#benefits">Benefits</a></li>
+                <li><a class="goto" href="#process">Process</a></li>
+                <li><a class="goto" href="#works">Works</a></li>
                 <div class="contact">
-                  <a href="#contact-section" class="btn btn-contact"
+                  <a href="#contact-section" class="btn btn-contact goto"
                     >Let's Talk</a
                   >
                 </div>
@@ -177,7 +185,7 @@
       </div>
     </section>
     <section class="background-box-desktop-left"></section>
-    <section class="perks-section">
+    <section class="perks-section" id="benefits">
       <div class="container">
         <div class="row justify-content-center perks-container">
           <div class="col-md-6 text-center">
@@ -369,7 +377,7 @@
       </div>
     </section>
     <section class="seperator"></section>
-    <section class="process-section">
+    <section class="process-section" id="process">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -442,7 +450,7 @@
       </div>
     </section>
     <section class="seperator-left"></section>
-    <section class="works-section">
+    <section class="works-section" id="works">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
