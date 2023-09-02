@@ -16,6 +16,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -46,6 +48,15 @@
           $(".btn-primary").toggleClass("hide");
           $(this).toggleClass("show");
           $(".burger-menu").toggleClass("hide");
+        });
+
+        $(".btn-common").click(function (event) {
+          event.preventDefault();
+          var targetId = $(this).attr("href");
+          $("html, body").animate(
+            { scrollTop: jQuery(targetId).offset().top },
+            1000
+          );
         });
       });
 
@@ -111,7 +122,7 @@
             </nav>
           </div>
           <div class="col-md-3 col-6 text-end d-md-block d-none">
-            <a href="#" class="btn btn-common">Let's Talk</a>
+            <a href="#contact-section" class="btn btn-common">Let's Talk</a>
           </div>
           <div class="col-6 d-md-none text-right toggle-icon-container">
             <div class="mobile-toggle">
@@ -126,7 +137,9 @@
                 <li><a href="#">Process</a></li>
                 <li><a href="#">Works</a></li>
                 <div class="contact">
-                  <a href="#" class="btn btn-contact">Let's Talk</a>
+                  <a href="#contact-section" class="btn btn-contact"
+                    >Let's Talk</a
+                  >
                 </div>
               </ul>
             </nav>
@@ -442,22 +455,29 @@
             <div class="works-carousel owl-carousel">
               <div class="item">
                 <img
-                  src="./images/stunning.png"
+                  src="./images/stunning-carousel/stunning1.png"
                   alt="Work Image 1"
                   class="work-image"
                 />
               </div>
               <div class="item">
                 <img
-                  src="./images/stunning.png"
+                  src="./images/stunning-carousel/stunning2.png"
                   alt="Work Image 2"
                   class="work-image"
                 />
               </div>
               <div class="item">
                 <img
-                  src="./images/stunning.png"
+                  src="./images/stunning-carousel/stunning3.png"
                   alt="Work Image 3"
+                  class="work-image"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="./images/stunning-carousel/stunning4.png"
+                  alt="Work Image 4"
                   class="work-image"
                 />
               </div>
@@ -467,7 +487,7 @@
       </div>
     </section>
     <section class="seperator"></section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
       <div class="container">
         <div class="row">
           <div class="col-md-6 contact-details-container">
