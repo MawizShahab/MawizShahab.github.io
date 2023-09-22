@@ -666,7 +666,8 @@ button.btn.btn-kainu-primary.contact {
     gap: 12px;
   }
 
-  .hero-buttons button {
+  .hero-buttons button,
+  .signup-buttons button {
     white-space: nowrap;
     padding: 18px !important;
     height: 32px !important;
@@ -728,7 +729,7 @@ button.btn.btn-kainu-primary.contact {
   }
 
   .contact-form .form-label {
-    padding: 0 !important;
+    padding: 0 5px !important;
   }
 
   .navbar-toggler {
@@ -763,6 +764,15 @@ button.btn.btn-kainu-primary.contact {
 
   .search-bar {
     margin-top: 20px !important;
+  }
+
+  .copyright-wrap ul li a {
+    padding: 16px 12px !important;
+  }
+
+  .form-input input,
+  .form-input textarea {
+    padding: 10px 5px;
   }
 }
 
