@@ -226,7 +226,7 @@ button.btn.btn-kainu-secondary {
 
 .contact-us-section {
   background-image: url("/images/bg-top.png"); /* Replace with your image path */
-  background-size: cover;
+  background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   text-align: left;
@@ -463,7 +463,7 @@ small span.purple-text {
 }
 
 .sponsers {
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -513,7 +513,7 @@ small span.purple-text {
 
 .contact-desc {
   font-family: "Bebas Neue";
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 120%;
   /* margin: 0 !important; */
@@ -597,6 +597,14 @@ button.btn.btn-kainu-primary.contact {
   line-height: 156%;
 }
 
+.signup-image {
+  margin: 50px 0;
+}
+
+iframe {
+  border-radius: 12px;
+}
+
 @media screen and (min-width: 1400px) {
   nav.navbar {
     padding: 30px 40px;
@@ -606,12 +614,19 @@ button.btn.btn-kainu-primary.contact {
   }
 }
 
-@media screen and (min-width: 1500px) {
-  .team-section,
-  .players-section,
-  .sponsors-section,
+/* @media screen and (min-width: 1800px) {
   .contact-us-section {
     padding: 100px 200px !important;
+  }
+} */
+@media screen and (min-width: 1500px) {
+  .team-section,
+  .players-section {
+    padding: 100px 200px !important;
+  }
+
+  .contact-us-section {
+    padding: 200px 140px 150px 140px !important;
   }
 
   .name,
@@ -633,12 +648,16 @@ button.btn.btn-kainu-primary.contact {
   }
 
   .sponsers {
-    gap: 50px;
+    gap: 20px;
   }
 
   .row.sponsers .card-container {
     max-width: 100%;
   }
+
+  /* .contact-us-section {
+    background-size: cover;
+  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -773,6 +792,10 @@ button.btn.btn-kainu-primary.contact {
   .form-input input,
   .form-input textarea {
     padding: 10px 5px;
+  }
+
+  iframe {
+    max-width: 100%;
   }
 }
 
@@ -1083,4 +1106,168 @@ footer li {
     width: 100%;
     padding: 0rem 10%;
   }
+}
+
+/* Extra responsive issues */
+
+@media screen and (min-width: 760px) and (max-width: 768px) {
+  .info,
+  .winning-next {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge {
+    font-size: 4px;
+  }
+
+  .winning-streak-label,
+  .next-match-label {
+    text-align: center;
+  }
+
+  .player-name {
+    font-size: 28px;
+  }
+
+  .team-info {
+    padding: 15px 10px;
+  }
+
+  .team,
+  .team-name {
+    font-size: 15px;
+  }
+
+  .contact-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 820px) {
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.8;
+  }
+
+  .info,
+  .winning-next {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge {
+    font-size: 4px;
+  }
+
+  .winning-streak-label,
+  .next-match-label {
+    text-align: center;
+  }
+
+  .player-name {
+    font-size: 28px;
+  }
+
+  .team-info {
+    padding: 15px 10px;
+  }
+
+  .team,
+  .team-name {
+    font-size: 15px;
+  }
+
+  .activity-categories {
+    padding: 15px 0;
+    overflow-x: scroll;
+  }
+  .hero-images img {
+    width: 25%;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+
+  .activity-category {
+    font-size: 15px;
+    margin: 0 2px 0 0;
+    padding: 12px 38px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .activity-categories {
+    padding: 15px 0;
+    overflow-x: scroll;
+  }
+  .hero-images img {
+    width: 25%;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+
+  .activity-category {
+    font-size: 15px;
+    margin: 0 2px 0 0;
+    padding: 12px 38px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+  .hero-buttons button {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}
+
+/* animations */
+
+.fade-in-up {
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.fade-in-left {
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.fade-in-right {
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
