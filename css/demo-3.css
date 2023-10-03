@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://unpkg.com/polished@4.1.2/dist/polished.min.js');
+
+:root {
+  --pbmit-global-color: #091e4b;
+  --pbmit-secondary-color: #3a4a6e;
+  --pbmit-light-color: #f1f9fe;
+  --pbmit-white-color: #ffffff;
+  --pbmit-blackish-color: #3a4a6e;
+  --pbmit-link-color-normal: #0e2f44;
+  --pbmit-link-color-hover: #091e4b;
+  --pbmit-global-color-rgb: $polished.tint(0.3, var(--pbmit-global-color));
+  --pbmit-secondary-color-rgb: $polished.tint(0.6, var(--pbmit-global-color));
+  --pbmit-responsive-breakpoint: 1200px;
+  --pbmit-body-typography-font-family: 'DM Sans', sans-serif;
+  --pbmit-body-typography-variant: regular;
+  --pbmit-body-typography-font-size: 16px;
+  --pbmit-body-typography-line-height: 26px;
+  --pbmit-body-typography-color: #787c8b;
+  --pbmit-heading-typography-font-family: 'Quicksand', sans-serif;
+  --pbmit-heading-color: #080337;
+  --pbmit-heading-font-variant: 700;
+  --pbmit-btn-typography-font-family: 'Quicksand', sans-serif;
+  --pbmit-btn-typography-variant: 700;
+  --pbmit-btn-typography-font-size: 15px;
+  --pbmit-btn-typography-line-height: 26px;
+  --border-radius: 32px;
+  --box-shadow-global: 0px 0px 23.25px 1.75px ${polished.tint(0.3, var(--pbmit-global-color))};
+  --box-shadow-blackish: 0px 0px 23.25px 1.75px rgba(14, 47, 68, 0.30);
+}
+
