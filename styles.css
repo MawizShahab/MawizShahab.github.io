@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 100px;
+}
+
+section {
+  background-color: #fff;
+  border: 5px solid #c9a565;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 150px;
+  /* height: 100vh; */
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  color: #45293f;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-family: "Jost", sans-serif;
+  color: #707070;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 145% */
+  letter-spacing: 1.9px;
+}
+
+.paragraph {
+  font-family: "Jost", sans-serif;
+  color: #45293f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: 0.81px;
+  margin: 50px 0;
+}
+
+.info {
+  background-image: url("/images/bg-certificate.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding: 20px; */
+  font-family: "Inter", sans-serif;
+  /* width: 100%; */
+}
+
+.info .row {
+  margin: 30px 0;
+}
+
+.info .row .col-md-12 {
+  display: flex;
+  gap: 50px;
+}
+
+.info-title {
+  color: #c9a565;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: initial;
+  width: 30%;
+}
+
+.info-value {
+  display: block;
+  color: #45293f;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex: 2;
+  border-bottom: 2px dashed #707070;
+  white-space: nowrap;
+}
+
+.signature {
+  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signature .col-md-12 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.signature .signature-title {
+  color: #c9a565;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.signature .signature-value {
+  color: #45293f;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+div#loom-companion-mv3 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    width: 1092px;
+    height: 1445px;
+  }
+}
